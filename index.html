@@ -11,12 +11,16 @@
       padding: 0;
       box-sizing: border-box;
     }
+    html {
+      scroll-behavior: smooth; /* smooth scrolling */
+    }
     body, html {
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
       text-align: center;
       position: relative;
+      overflow-x: hidden;
     }
     video.bg-video {
       position: fixed;
@@ -31,25 +35,33 @@
     header {
       padding: 30px 20px;
       background: rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
     h1 {
       font-size: 3em;
+      margin-bottom: 10px;
     }
     .btn {
       background: rgba(255, 255, 255, 0.1);
       color: white;
-      padding: 10px 20px;
+padding: 10px 20px;
       border: 1px solid #fff;
-      margin: 10px;
-text-decoration: none;
+      margin: 10px 10px 0 10px;
+      text-decoration: none;
       border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
     .btn:hover {
       background: rgba(255, 255, 255, 0.3);
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       background: rgba(0, 0, 0, 0.3);
+      min-height: 300px;
     }
     .box {
       background: rgba(255, 255, 255, 0.1);
@@ -62,14 +74,17 @@ text-decoration: none;
       background: #000;
       padding: 10px;
       color: #aaa;
+      position: relative;
+      z-index: 10;
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔹 Background Video -->
-  <video autoplay muted loop class="bg-video">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
     <source src="https://cdn.coverr.co/videos/coverr-floating-bubbles-0304/1080p.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
   </video>
 
   <header>
@@ -82,14 +97,14 @@ text-decoration: none;
   <section id="about">
     <div class="box">
       <h2>Who We Are</h2>
-      <p>We are a team of young minds offering technical and social services to uplift digital literacy and community support in Sri Lanka.</p>
+<p>We are a team of young minds offering technical and social services to uplift digital literacy and community support in Sri Lanka.</p>
     </div>
   </section>
 
   <section id="services">
     <div class="box">
       <h2>What We Do</h2>
-<p>🔧 Free Tech Help<br/>📱 Social Media Awareness<br/>💻 Web & App Support<br/>👥 Volunteer Community Work</p>
+      <p>🔧 Free Tech Help<br/>📱 Social Media Awareness<br/>💻 Web & App Support<br/>👥 Volunteer Community Work</p>
     </div>
   </section>
 
