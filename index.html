@@ -3,72 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nipun XD-Tech & Social Service</title>
+  <title>Nipun XD - Tech & Social Service</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #1f4037, #99f2c8);
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #fff;
-      text-align: center;
     }
+
     header {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 30px 20px;
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: rgba(0, 0, 0, 0.4);
     }
-    h1 {
-      font-size: 3em;
-      margin: 0;
+
+    header h1 {
+      font-size: 3.5em;
+      letter-spacing: 2px;
+      color: #00ffae;
     }
-    p {
-      font-size: 1.2em;
+
+    header p {
+      font-size: 1.3em;
       margin-top: 10px;
     }
-    section {
-      padding: 40px 20px;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #111;
+      padding: 15px 0;
     }
+
+    nav a {
+      color: #00ffae;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
     .box {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.08);
       margin: 20px auto;
+      padding: 30px;
+      max-width: 800px;
+border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .service-item {
+      background: rgba(255,255,255,0.1);
       padding: 20px;
-      max-width: 700px;
       border-radius: 10px;
     }
+
     footer {
-      background: #100;
-      padding: 15px;
-      font-size: 0.9em;
-      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #888;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>NIPUN-XD</h1>
     <p>Empowering Communities Through Tech & Service</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <div class="box">
       <h2>Who We Are</h2>
-<p>We are a team of young minds offering technical and social services to uplift digital literacy and community support in Sri Lanka.</p>
+      <p>We are a dynamic group of tech-savvy youth committed to bridging the digital gap and uplifting Sri Lankan communities through innovative solutions and support services.</p>
     </div>
+  </section>
 
+  <section id="services">
     <div class="box">
-      <h2>What We Do</h2>
-      <p>🔧 Free Tech Help<br/>📱 Social Media Awareness<br/>💻 Web & App Support<br/>👥 Volunteer Community Work</p>
+      <h2>Our Services</h2>
+      <div class="services-list">
+        <div class="service-item">🔧 Free Tech Help</div>
+        <div class="service-item">📱 Social Media Awareness</div>
+<div class="service-item">💻 Web & App Support</div>
+        <div class="service-item">👥 Volunteer Programs</div>
+        <div class="service-item">📸 Graphic Design</div>
+        <div class="service-item">🌐 Website Development</div>
+      </div>
     </div>
+  </section>
 
+  <section id="team">
+    <div class="box">
+      <h2>Our Team</h2>
+      <p>Led by passionate individuals, our team works to deliver real change using tech for good. We believe in empowering others with skills, awareness and support.</p>
+    </div>
+  </section>
+
+  <section id="contact">
     <div class="box">
       <h2>Contact Us</h2>
-      <p>Email: cybernipun.lk@gmail.com<br/>Whatsapp: +94707866331</p>
+      <p>Email: cybernipun.lk@gmail.com</p>
+      <p>WhatsApp: +94 70 786 6331</p>
     </div>
   </section>
 
   <footer>
     © 2025 Cyber Nipun | All rights reserved
   </footer>
+
 </body>
 </html>
-
